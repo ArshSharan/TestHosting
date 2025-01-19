@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Elements Demo</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+  <h1 style="text-align: center;">HTML5 Elements Demo</h1>
+
+  <form action="#" method="POST">
+    <!-- Text Box -->
+    <label for="name" style="display: block; margin: 10px 0;">Enter your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" maxlength="50" required style="padding: 5px; width: 100%; max-width: 300px;">
+
+    <!-- Radio Buttons -->
+    <fieldset style="margin: 20px 0; padding: 10px;">
+      <legend>Gender</legend>
+      <label><input type="radio" name="gender" value="male" required> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </fieldset>
+
+    <!-- Check Boxes -->
+    <fieldset style="margin: 20px 0; padding: 10px;">
+      <legend>Select your Interests</legend>
+      <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+      <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+      <label><input type="checkbox" name="interests" value="music"> Music</label>
+    </fieldset>
+
+    <!-- Scrolled Selection Box -->
+    <label for="skills" style="display: block; margin: 10px 0;">Select your Skills:</label>
+    <select id="skills" name="skills" size="3" multiple style="width: 100%; max-width: 300px; padding: 5px;">
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+    </select>
+
+    <!-- Option Box -->
+    <label for="country" style="display: block; margin: 10px 0;">Choose your Country:</label>
+    <select id="country" name="country" required style="padding: 5px; width: 100%; max-width: 300px;">
+      <option value="">--Select--</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="canada">Canada</option>
+    </select>
+
+    <!-- TextArea Box -->
+    <label for="comments" style="display: block; margin: 10px 0;">Your Comments:</label>
+    <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Write something..." style="padding: 5px; width: 100%; max-width: 300px;"></textarea>
+
+    <!-- Datalist -->
+    <label for="browser" style="display: block; margin: 10px 0;">Favorite Web Browser:</label>
+    <input list="browsers" id="browser" name="browser" placeholder="Select or type" style="padding: 5px; width: 100%; max-width: 300px;">
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Edge">
+      <option value="Safari">
+      <option value="Opera">
+    </datalist>
+
+    <!-- Submit Button -->
+    <button type="submit" style="margin-top: 20px; padding: 10px 20px; background-color: #6429f9; color: white; border: none; cursor: pointer;">Submit</button>
+  </form>
+
+</body>
+</html>
